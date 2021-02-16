@@ -1,0 +1,14 @@
+<div class="modal modal-center">
+  <div id="close-btn-wrapper">
+    <button id="close-btn"
+            (click)="doCloseModal()">
+      <label>CHIUDI</label>
+    </button>
+  </div>
+  <div class="modal-wrapper">
+    <app-user-detail
+                    [userSelected]="userSelected"
+                    (onUserUpdate)="userDetailUpdate($event)">
+    </app-user-detail>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+
+<form>
+  <input type="hidden" name="id" [(ngModel)]="userSelected.id">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input id="name" name="name" [(ngModel)]="userSelected.name">
+  </div>
+  <div class="form-group">
+    <label for="lastname">Lastname</label>
+    <input id="lastname" name="lastname" [(ngModel)]="userSelected.lastName">
+  </div>
+  <div class="form-group">
+    <label for="fiscalCode">Fiscal Code</label>
+    <input id="fiscalCode" name="fiscalCode" [(ngModel)]="userSelected.fiscalCode">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" [(ngModel)]="userSelected.email">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input id="phone" name="phone" [(ngModel)]="userSelected.phone">
+  </div>
+  <div class="form-group">
+    <label for="city">City</label>
+    <input id="city" name="city" [(ngModel)]="userSelected.city">
+  </div>
+  <div class="form-group form-footer">
+   <button  class="save-btn"
+            (click)="updateUser(userSelected)">SAVE</button>
+  </div>
+</form>

@@ -1,0 +1,46 @@
+<div class="table-wrapper">
+  <div id="upbar-actions">
+    <button id="add-btn"
+             (click) = onUpdateUser($event)>
+      <label>ADD USER</label>
+    </button>
+  </div>
+  <table>
+    <caption>Data Users</caption>
+    <thead>
+      <tr>
+        <th>
+          <label>Nome</label>
+        </th>
+        <th>
+          <label>Cognome</label>
+        </th>
+        <th>
+          <label>Codice Fiscale</label>
+        </th>
+        <th>
+          <label>Email</label>
+        </th>
+        <th>
+          <label>Telefono</label>
+        </th>
+        <th>
+          <label>Provincia</label>
+        </th>
+        <th>
+          <label>Actions</label>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr app-user
+          *ngFor = "let user of usersData"
+          [userData] = "user"
+          (onDeleteUser) = "deleteUser($event)"
+          (onSelectUser) = "onUpdateUser($event)">
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <app-modal></app-modal> -->

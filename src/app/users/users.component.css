@@ -1,0 +1,50 @@
+.table-wrapper {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#upbar-actions {
+  width: 60%;
+  height: 35px;
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+#upbar-actions > #add-btn {
+  width: 120px;
+  height: 35px;
+  background-color: royalblue;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+table {
+  width: 60%;
+  padding: 10px;
+  border: 3px solid #555;
+}
+
+table > thead {
+  background-color: aliceblue;
+  color: royalblue;
+}
+
+table > thead > tr > th {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+table > tbody > tr:nth-child(even) {
+  background-color: lightyellow;
+}
+
+
+

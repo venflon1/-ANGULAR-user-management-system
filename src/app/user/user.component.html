@@ -1,0 +1,16 @@
+<td>{{ user.name }}</td>
+<td>{{ user.lastName }}</td>
+<td>{{ user.fiscalCode }}</td>
+<td>{{ user.email }}</td>
+<td>{{ user.phone }}</td>
+<td>{{ user.city }}</td>
+<td id="column-actions">
+  <button class="action-btn del-btn"
+          (click)="onDeleteUser(user.id)">
+    <label>DELETE</label>
+  </button>
+  <button class="action-btn upd-btn"
+          (click)="onSelectUser(user.id)">
+    <label>UPDATE</label>
+  </button>
+</td>
